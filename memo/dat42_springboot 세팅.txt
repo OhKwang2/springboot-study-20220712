@@ -1,0 +1,44 @@
+
+	#Spring setting
+	- help -> eclipse marketplace -> marketplace client update -> update now ->spring tool 3 설치 -> 동의 후 finish -> 기다리시오 -> trust 나타나면 select all 누르고 finish 하면 됨 -> 리스타트 후 oepn perspective에서 spring open
+	(설치 오류뜰경우 spring tools 3 add-on for spring tools 4 오류 구글링
+	http://dist.springsource.com/snapshot/STS/nightly-distributions.html -> ???)
+
+	- new spring legacy project -> ???
+
+
+	#Spring Boot 먼저 시작 ㄱㄱ
+	- https://start.spring.io/ -> spring initializr -> 
+	(spring tool에서 만들어도 되지만, 여러가지 호환될 수 있게 하려면 홈페이지에서 사용) -> 버전은 가장 낮은 버전(2.6.9) -> group은 주소의 역순 -> dependencies는 Lombok, Spring Boot DevTools (저장하면 서버 자동 재실행), Spring Web, jsp대신 thymeleaf 해당 4가지는 스프링부트를 만드는데 있어 가장 기본 -> Generate -> 해당 파일을 워크스페이스로 이동 후 압축풀기 -> share
+(https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.6.9&packaging=jar&jvmVersion=11&groupId=com.springboot&artifactId=study-kok&name=study-kok&description=Demo%20project%20for%20Spring%20Boot&packageName=com.springboot.study-kok&dependencies=lombok,devtools,web,thymeleaf) -> 링크 카피 -> 주소창에 입력
+
+
+vs code에서 사용할 때
+C:\junil\workspace\git\springboot-study-20220712\src\main\resources
+
+html에 xmlns:th="http://www.thymeleaf.org"
+안 넣으면 나중에 배포할 때 오류뜸
+
+포트 변경할 때는 resources에서 application.propertires에서 server.port = 포트 로 변경
+
+내 PC에서 사용중인 IP, 포트 조회
+cmd -> netstat -o -a
+PID(Process ID)
+
+죽이는 방법
+taskkill -f -pid 0000
+-> 강제로 프로세스 종료됨.
+
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.Mapping;
+
+@SpringBootApplication
+public class StudyKokApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(StudyKokApplication.class, args);
+	}
+}

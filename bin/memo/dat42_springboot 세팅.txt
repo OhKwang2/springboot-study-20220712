@@ -1,0 +1,13 @@
+
+	#Spring setting
+	- help -> eclipse marketplace -> marketplace client update -> update now ->spring tool 3 설치 -> 동의 후 finish -> 기다리시오 -> trust 나타나면 select all 누르고 finish 하면 됨 -> 리스타트 후 oepn perspective에서 spring open
+	(설치 오류뜰경우 spring tools 3 add-on for spring tools 4 오류 구글링
+	http://dist.springsource.com/snapshot/STS/nightly-distributions.html -> ???)
+
+	- new spring legacy project -> ???
+
+
+	#Spring Boot 먼저 시작 ㄱㄱ
+	- https://start.spring.io/ -> spring initializr -> 
+	(spring tool에서 만들어도 되지만, 여러가지 호환될 수 있게 하려면 홈페이지에서 사용) -> 버전은 가장 낮은 버전(2.6.9) -> group은 주소의 역순 -> dependencies는 Lombok, Spring Boot DevTools (저장하면 서버 자동 재실행), Spring Web, jsp대신 thymeleaf 해당 4가지는 스프링부트를 만드는데 있어 가장 기본 -> Generate -> 해당 파일을 워크스페이스로 이동 후 압축풀기 -> share
+(https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.6.9&packaging=jar&jvmVersion=11&groupId=com.springboot&artifactId=study-kok&name=study-kok&description=Demo%20project%20for%20Spring%20Boot&packageName=com.springboot.study-kok&dependencies=lombok,devtools,web,thymeleaf) -> 링크 카피 -> 주소창에 입력
