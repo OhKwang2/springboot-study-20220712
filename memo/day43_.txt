@@ -1,0 +1,6 @@
+@Spring mvc
+
+	#Spring mvc(Model View Controller) 디자인 패턴
+	- Presentation Layer 영역 
+	- DIspatcher Servlet으로 모든 요청을 다 받아서 뿌려줌
+	- Spring Layered architecture 공부할 것
