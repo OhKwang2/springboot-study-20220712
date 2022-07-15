@@ -1,0 +1,13 @@
+@
+
+	#스프링 부트에 마리아 DB 연결하기
+	- mvn -> MariaDB Java Client » 2.7.6
+	-> porm.xml에 저장
+	(현재 스프링부트의 버전에 최적화된 상태로 알아서 버전관리를 해줘서 버전은 생략해도 됨.)
+
+	- mvn -> MyBatis Spring Boot Starter » 2.2.2 -> porm.xml 저장
+	- application.properties를 .yml로 바꾸고 내부 형식 변경
+
+	#mybatis
+	-https://mybatis.org/mybatis-3/getting-started.html
+	- 읽어볼 것
