@@ -1,0 +1,14 @@
+@
+
+	#JSON 쓰는 이유
+	- Spring 서버 이용중
+	- 크롬, 안드로이드, IOS 어플, 프로그램 등 다양한 곳에서 요청 가능
+	- 단, Http 프로토콜만 지켜주면 데이터 통신이 가능
+	- 객체는 변수와 메소드로 구성
+	- JSON은 변수는 담을 수 있지만 메소드는 담을 수 없음. 단순 데이터 전송용
+	- POSTMAN에서 데이터 보낼때는 raw, JSON으로 설정해서 보내야 함.
+	- 
+	
+	#데이터 처리 방식
+	controller		Service		Dao(Repository)
+    ->DTO		->DTO      D->E	   -> E	
